@@ -1,0 +1,3 @@
+Your code looks great, and is very easy to follow. It's awesome that you made not one, but three classes!
+That being said, you may want to change the name of the date-split columns to avoid potential confusion
+ in cases where you have multiple dates being split for whatever reason.
