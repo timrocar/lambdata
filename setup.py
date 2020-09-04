@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-timrocar",
-    version='0.0.97',
+    version='0.0.98',
     author='timrocar',
     description='A collection of Data Science functions',
     long_description=LONG_DESCRIPTION,
