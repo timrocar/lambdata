@@ -4,17 +4,17 @@ import datetime
 
 #simple class
 class Adding:
-    def __init__(self, dataframe, list):
+    def __init__(self, dataframe, l):
         self.dataframe = dataframe
-        self.list = list
+        self.l = l
 
     def addlist(self):
-        s = pd.Series(self.list, index = self.dataframe.index)
+        s = pd.Series(self.l, index = self.dataframe.index)
         self.dataframe['listcol'] = s
 
 
 
-
+# TODO - Make this work
 # base class for datawrangling
 class Dfwrangler:
     def __init__(self, dataframe):

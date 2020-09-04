@@ -7,7 +7,8 @@ import datetime
 
 
 def splitdate(df, date):
-    # make col datetime
+    '''Convert columns to datetime, then add additional columns for
+    day, month, year'''
     if type(df[date]) == object:
         df[date] = pd.to_datetime(df[date])
     elif type(df[date]) == np.float64 or type(df[date]) == np.int64:
@@ -22,6 +23,8 @@ def splitdate(df, date):
 
 
 def addlist(df, list):
+    '''Converts list to Series then adds to DataFrame'''
     s = pd.Series(list, index=df.index)
     df['listcol'] = s
+
     
